@@ -14,7 +14,7 @@ Alternatively, you can follow the detailed instructions to setup the software fr
 
 #### 2. PyRep and Coppelia Simulator
 
-Follow instructions from my [PyRep fork](https://github.com/markusgrotz/PyRep); reproduced here for convenience:
+Follow instructions from the [PyRep fork](https://github.com/markusgrotz/PyRep); reproduced here for convenience:
 
 PyRep requires version **4.1** of CoppeliaSim. Download: 
 - [Ubuntu 20.04](https://www.coppeliarobotics.com/files/V4_1_0/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04.tar.xz)
@@ -51,7 +51,7 @@ You could try running one of the examples in the *examples/* folder.
 
 #### 3. RLBench
 
-PerAct uses my [RLBench fork](https://github.com/markusgrotz/RLBench/tree/peract). 
+PerAct2 uses the [RLBench fork](https://github.com/markusgrotz/RLBench/tree/peract). 
 
 ```bash
 cd <install_dir>
@@ -65,7 +65,7 @@ For [running in headless mode](https://github.com/MohitShridhar/RLBench/tree/per
 
 #### 4. YARR
 
-PerAct uses my [YARR fork](https://github.com/markusgrotz/YARR/).
+PerAct2 uses the [YARR fork](https://github.com/markusgrotz/YARR/).
 
 ```bash
 cd <install_dir>
@@ -77,11 +77,11 @@ pip install -e .
 
 
 
-#### RVT baseline
+#### 5. RVT
 
-pip install git+https://github.com/NVlabs/RVT.git 
+```bash
+cd RRVT
 pip install -e .
-
-
+```
 
 

@@ -52,10 +52,10 @@ RUN eval "$(/opt/conda/bin/conda shell.bash hook)" && conda install mamba -c con
 RUN export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890
 
 
-RUN git clone https://github.com/markusgrotz/peract_bimanual.git ${HOME}/code/peract_bimanual
+RUN git clone https://github.com/whiteNavelOrange/FRCT.git ${HOME}/code/FRCT
 
 
-RUN eval  "$(/opt/conda/bin/conda shell.bash hook)" && ${HOME}/code/peract_bimanual/scripts/install_dependencies.sh
+RUN eval  "$(/opt/conda/bin/conda shell.bash hook)" && ${HOME}/code/FRCT/scripts/install_dependencies.sh
 
 
 # Activate the environment by default
@@ -63,7 +63,7 @@ RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate rlbench" >> ~/.bashrc
 
 
-WORKDIR /root/code/peract_bimanual
+WORKDIR /root/code/FRCT
 
 # Default command
 CMD ["/bin/bash"]
