@@ -171,8 +171,8 @@ python eval_frct.py
 Xvfb :611 -screen 0 1024x768x16 &
 python DISPLAY=:611 eval_frct.py 
 ```
-
-
+## Checkpoints
+Release the [checkpoints](https://huggingface.co/navelorange/FRCT/tree/main).
 ## Acknowledgements
 
 We sincerely thank the authors of the following repositories for sharing their code.
