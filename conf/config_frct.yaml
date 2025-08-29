@@ -18,7 +18,7 @@ rlbench:
     - bimanual_handover_item_easy
     - bimanual_take_tray_out_of_oven
     demos: 100
-    demo_path: /root/data/train
+    demo_path: /home/sgitai/peract_bimanual/rlbench_data/train
     episode_length: 25
     cameras: ["over_shoulder_left", "over_shoulder_right", "overhead", "wrist_right", "wrist_left", "front"]
     # cameras: ["wrist", "wrist2", "front"]
@@ -27,12 +27,12 @@ rlbench:
     include_lang_goal_in_obs: True
 
 replay:
-    batch_size: 72
+    batch_size: 64
     timesteps: 1
     prioritisation: False
     task_uniform: True # uniform sampling of tasks for multi-task buffers
     use_disk: True
-    path: '/tmp/' # only used when use_disk is True.
+    path: '/home/sgitai/FRCT/tmp/' # only used when use_disk is True.
     max_parallel_processes: 32
 
 framework:
@@ -46,7 +46,7 @@ framework:
     training_iterations: 500000
     gpu: 0
     env_gpu: 0
-    logdir: '/root/code/peract2/logs'
+    logdir: '/home/sgitai/FRCT/logs'
     logging_level: 20 # https://docs.python.org/3/library/logging.html#levels
     seeds: 1
     start_seed: 0

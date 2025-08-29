@@ -25,8 +25,8 @@ if ! [ -x "$(command -v conda)" ]; then
     exit 1
 fi
 
-conda create -n ${ENVIRONMENT_NAME} python=3.8
-mamba install -n ${ENVIRONMENT_NAME} pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia   
+#conda create -n ${ENVIRONMENT_NAME} python=3.8
+#mamba install -n ${ENVIRONMENT_NAME} pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia   
 
 
 export COPPELIASIM_ROOT=${WORKSPACE_DIR}/coppelia_sim
@@ -81,12 +81,12 @@ cd rlbench
 conda run -n ${ENVIRONMENT_NAME} pip install -e .
 cd ..
 
-# PerAct Bimanual
-cd $basedir/..
-conda run -n ${ENVIRONMENT_NAME} pip install -e .
 
 cd ${WORKSPACE_DIR}
 
 # RVT
 cd FRCT/RRVT
+conda run -n ${ENVIRONMENT_NAME} pip install -e .
+
+cd libs
 conda run -n ${ENVIRONMENT_NAME} pip install -e .

@@ -82,7 +82,7 @@ class RMVT(nn.Module):
         if self.use_point_renderer:
             from point_renderer.rvt_renderer import RVTBoxRenderer as BoxRenderer
         else:
-            from mvt.renderer import BoxRenderer
+            from rvt.mvt.renderer import BoxRenderer
         global BoxRenderer
 
         # creating a dictonary of all the input parameters

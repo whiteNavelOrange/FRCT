@@ -11,4 +11,4 @@ Classifier: Programming Language :: Python :: 3.8
 Classifier: Natural Language :: English
 Classifier: Topic :: Scientific/Engineering
 Provides-Extra: xformers
-License-File: LICENSE
+Requires-Dist: xformers@ git+https://github.com/facebookresearch/xformers.git@main#egg=xformers ; extra == "xformers"

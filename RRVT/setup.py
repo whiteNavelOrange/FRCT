@@ -8,6 +8,16 @@ Author: Ankit Goyal
 """
 from setuptools import setup, find_packages
 
+requirements = [
+    "regex",
+    "einops",
+    "ftfy",
+    "cffi",
+    "yacs"
+    "matplotlib",
+    "bitsandbyte",
+    "clip @ git+https://github.com/openai/CLIP.git",
+]
 
 __version__ = "0.0.1"
 setup(
@@ -26,7 +36,7 @@ setup(
         "Topic :: Scientific/Engineering",
     ],
     packages=['rvt'],
-    # install_requires=requirements,
+    install_requires=requirements,
     extras_require={
         "xformers": [
             "xformers @ git+https://github.com/facebookresearch/xformers.git@main#egg=xformers",

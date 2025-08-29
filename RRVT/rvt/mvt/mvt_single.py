@@ -393,7 +393,7 @@ class MVT(nn.Module):
         if self.use_point_renderer:
             from point_renderer.rvt_ops import select_feat_from_hm
         else:
-            from mvt.renderer import select_feat_from_hm
+            from rvt.mvt.renderer import select_feat_from_hm
         global select_feat_from_hm
 
     def get_pt_loc_on_img(self, pt, dyn_cam_info):

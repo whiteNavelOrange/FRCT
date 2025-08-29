@@ -5,7 +5,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mvt.utils import ForkedPdb
+from rvt.mvt.utils import ForkedPdb
 
 
 class ConvexUpSample(nn.Module):
