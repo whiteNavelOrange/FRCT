@@ -88,5 +88,5 @@ cd ${WORKSPACE_DIR}
 cd FRCT/RRVT
 conda run -n ${ENVIRONMENT_NAME} pip install -e .
 
-cd libs
+cd libs/peract_colab
 conda run -n ${ENVIRONMENT_NAME} pip install -e .
